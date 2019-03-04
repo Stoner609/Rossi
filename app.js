@@ -34,7 +34,7 @@ app.use(
 
 mongoose
   .connect(
-`mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0-shard-00-00-2vnhb.mongodb.net:27017,cluster0-shard-00-01-2vnhb.mongodb.net:27017,cluster0-shard-00-02-2vnhb.mongodb.net:27017/${process.env.MONGO_DB}?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true`
+`mongodb://stoner:GfRN9kCX7u10yTLh@cluster0-shard-00-00-2vnhb.mongodb.net:27017,cluster0-shard-00-01-2vnhb.mongodb.net:27017,cluster0-shard-00-02-2vnhb.mongodb.net:27017/events-react-dev?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true`
     // `mongodb+srv://${process.env.MONGO_USER}:${
     //   process.env.MONGO_PASSWORD
     // }@cluster0-2vnhb.mongodb.net/${process.env.MONGO_DB}?retryWrites=true`
