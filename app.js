@@ -8,7 +8,7 @@ const graphQlResolvers = require("./graphql/resolvers/index");
 const isAuth = require("./middleware/is-auth");
 
 const app = express();
-
+app.use(express.static('public'))
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
