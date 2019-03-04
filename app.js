@@ -34,14 +34,11 @@ app.use(
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.MONGO_USER}:${
-      process.env.MONGO_PASSWORD
-    }@cluster0-2vnhb.mongodb.net/${process.env.MONGO_DB}?retryWrites=true`
+    `mongodb+srv://stoner:GfRN9kCX7u10yTLh@cluster0-2vnhb.mongodb.net/events-react-dev?retryWrites=true`
   )
   .then(() => {
     app.listen(8000);
   })
   .catch(err => {
-    app.listen(8000);
     console.log(err);
   });
