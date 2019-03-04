@@ -69,7 +69,7 @@ class EventsPage extends Component {
 
     const token = this.context.token;
 
-    fetch("https://pacific-depths-25242.herokuapp.com/graphql", {
+    fetch("http://localhost:8000/graphql", {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {
@@ -114,7 +114,7 @@ class EventsPage extends Component {
       `
     };
 
-    fetch("https://pacific-depths-25242.herokuapp.com/graphql", {
+    fetch("http://localhost:8000/graphql", {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {

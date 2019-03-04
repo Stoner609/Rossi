@@ -58,7 +58,7 @@ class AuthPage extends Component {
       };
     }
 
-    fetch("https://pacific-depths-25242.herokuapp.com/graphql", {
+    fetch("http://localhost:8000/graphql", {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {
