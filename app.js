@@ -32,12 +32,13 @@ app.use(
   })
 );
 
+const PORT = process.env.PORT || 8000;
 mongoose
   .connect(
     `mongodb+srv://stoner:GfRN9kCX7u10yTLh@cluster0-2vnhb.mongodb.net/events-react-dev?retryWrites=true`
   )
   .then(() => {
-    app.listen(3000);
+    app.listen(PORT);
   })
   .catch(err => {
     console.log(err);
