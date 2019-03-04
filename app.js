@@ -37,7 +37,7 @@ mongoose
     `mongodb+srv://stoner:GfRN9kCX7u10yTLh@cluster0-2vnhb.mongodb.net/events-react-dev?retryWrites=true`
   )
   .then(() => {
-    app.listen(8000);
+    app.listen(3000);
   })
   .catch(err => {
     console.log(err);
