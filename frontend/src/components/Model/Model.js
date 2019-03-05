@@ -16,7 +16,7 @@ const model = props => (
       )}
       {props.canConfirm && (
         <button className="btn" onClick={props.onConfirm}>
-          Confirm
+          {props.confirmText}
         </button>
       )}
     </section>
